@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')();
 
-let num = Number(prompt("There are seven days in a week.\nEnter a number, 1 - 7, and I will tell you what day of the week the number corresponds to.\nEnter a number: "));
+let num = Number(prompt("There are seven days in a week. Enter a number, 1 - 7, and I will tell you what day of the week the number corresponds to. Enter a number: "));
 
 if (num === 1) {
     console.log("Monday");

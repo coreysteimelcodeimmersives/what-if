@@ -1,25 +1,21 @@
 const prompt = require('prompt-sync')();
 
-let num = Number(prompt("This program will break up your class into groups of 3's and 2's.\nEnter your class size: "));
+let num = Number(prompt("This program will break up your class into groups of 3's and 2's. Enter your class size: "));
 
-let remainder = num % 3
+let remainder = num % 3;
 
-console.log(remainder);
+let answer = num / 3;
 
-// if (num === 1) {
-//     console.log("Monday");
-// } else if (num === 2) {
-//     console.log("Tuesday");
-// } else if (num === 3) {
-//     console.log("Wednesday");
-// } else if (num === 4) {
-//     console.log("Thursday");
-// } else if (num === 5) {
-//     console.log("Friday");
-// } else if (num === 6) {
-//     console.log("Saturday");
-// } else if (num === 7) {
-//     console.log("Sunday");
-// } else {
-//     console.log("error");
-// }
+let remainder1 = num - 1;
+
+let remainder2 = num - 2;
+
+if (remainder === 0) {
+    console.log("You will have " + answer + " groups of three.");
+} else if (remainder === 1) {
+    let groupsOfThree = (remainder1 / 3) - 1;
+    console.log("You will have " + groupsOfThree + " groups of three and 2 groups of two.");
+} else {
+    let groupsOfThree = remainder2 / 3;
+    console.log("You will have " + groupsOfThree + " groups of three and 1 group of two.")
+}
